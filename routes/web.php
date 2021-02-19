@@ -31,6 +31,9 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('tickets/new', 'TicketController@new')->name('ticket.new');
 Route::post('tickets', 'TicketController@create')->name('ticket.create');
 Route::get('tickets', 'TicketController@index')->name('ticket.index');
+Route::get('tickets/{ticket}', 'TicketController@show')->name('ticket.show');
+Route::post('tickets/{ticket}/reply', 'ReplyController@create')->name('reply.create');
+Route::get('tickets/{ticket}/close', 'TicketController@close')->name('ticket.close');
 
 Auth::routes();
 

@@ -4,6 +4,7 @@ namespace App;
 
 use Hekmatinasser\Verta\Verta;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Ticket extends Model
 {
@@ -24,15 +25,54 @@ class Ticket extends Model
         return ['پایین', 'متوسط', 'بالا'][$value];
     }
 
-    public function getStatusAttribute($value)
+    public function getStatusNameAttribute()
     {
-        return ['باز', 'پاسخ داده شده', 'بسته'][$value];
+        return ['باز', 'پاسخ داده شده', 'بسته'][$this->status];
     }
 
     public function getCreatedAtAttribute($value)
     {
         $time = new \Verta($value);
         return $time->formatDifference();
+    }
+
+    public function hasFile()
+    {
+        return !is_null($this->file_path);
+    }
+
+    public function file()
+    {
+        return $this->hasFile()
+            ? Storage::url($this->file_path)
+            : null;
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
+    public function isCreated()
+    {
+        return $this->status == 0;
+    }
+
+    public function replied()
+    {
+        $this->status = 1;
+        $this->save();
+    }
+
+    public function close()
+    {
+        $this->status = 2;
+        $this->save();
+    }
+
+    public function isClosed()
+    {
+        return $this->status == 2;
     }
 
 

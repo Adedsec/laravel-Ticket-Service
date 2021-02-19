@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9041c4e3-1c51-4401-b4c9-821346d875ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/fa/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tickets/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tickets/new.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ticketService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ticketService.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tickets/ticket.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReplyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReplyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TicketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TicketController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reply.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ticket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tickets/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tickets/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +178,7 @@
       <workItem from="1612811530206" duration="2330000" />
       <workItem from="1613373517029" duration="2657000" />
       <workItem from="1613477305159" duration="8528000" />
-      <workItem from="1613586759642" duration="910000" />
+      <workItem from="1613586759642" duration="8958000" />
     </task>
     <servers />
   </component>
@@ -194,6 +186,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1613718792503">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1613718792503" />
     <state x="361" y="108" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1613586966324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -206,9 +202,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="380" y="48" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1613478607420" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1613587437553">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1613720325672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1613587437553" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1613720325672" />
   </component>
 </project>

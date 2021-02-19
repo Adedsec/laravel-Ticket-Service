@@ -46,4 +46,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(Ticket::class);
     }
+
+    public function replies()
+    {
+        return $this->morphMany(Reply::class, 'repliable');
+    }
+
+    public function isAdmin()
+    {
+        return $this instanceof Admin;
+    }
 }

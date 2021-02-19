@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Ticket;
 use Illuminate\Http\Request;
 
 class TicketController extends Controller
@@ -32,10 +33,21 @@ class TicketController extends Controller
         return redirect()->back()->withSuccess('پیام شما با موفقیت ارسال شد');
     }
 
+    public function show(Ticket $ticket)
+    {
+        return view('tickets.ticket', compact('ticket'));
+    }
+
     private function uploadFile(Request $request)
     {
         return $request->hasFile('file')
             ? $request->file->store('public')
             : null;
+    }
+
+    public function close(Ticket $ticket)
+    {
+        $ticket->close();
+        return back();
     }
 }

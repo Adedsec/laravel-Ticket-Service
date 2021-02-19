@@ -20,13 +20,13 @@
                 @foreach ($tickets as $ticket)
                     <tr>
                         <td>
-                            <a href="">
+                            <a href="{{route('ticket.show',$ticket->id)}}">
                                 {{$ticket->title}}
                             </a>
                         </td>
                         <td>{{$ticket->user->name}}</td>
                         <td>{{$ticket->priority}}</td>
-                        <td>{{$ticket->status}}</td>
+                        <td>{{$ticket->statusName}}</td>
                         <td>{{$ticket->created_at}}</td>
                     </tr>
                 @endforeach
